@@ -1,0 +1,58 @@
+\documentclass{sig-alternate-10pt}
+\usepackage{graphicx}
+\usepackage{balance}
+\usepackage{comment}
+\usepackage{times,epsfig,subfigure,endnotes,color,url,paralist,multirow,float}
+\usepackage{epstopdf}
+\usepackage[pdftex]{hyperref}
+\hypersetup{
+	pdftitle={SIGCHI Conference Proceedings Format},
+	pdfauthor={LaTeX},
+	pdfkeywords={SIGCHI, proceedings, archival format},
+	bookmarksnumbered,
+	pdfstartview={FitH},
+	colorlinks,
+	citecolor=black,
+	filecolor=black,
+	linkcolor=black,
+	urlcolor=black,
+	breaklinks=true,
+}
+
+\begin{document}
+
+\title{A Comparative Study of MobilityFirst and NDN towards ICN-Centric Internet of Things Architecture}
+
+\numberofauthors{1}
+\author{
+\alignauthor
+Sugang Li\winlab, Yanyong Zhang\winlab, Dipankar Raychadhuri\winlab
+\vspace{2mm}
+Ravi Ravindran\huawei, Guoqiang Wang\huawei
+        \vspace{2mm}
+        \affaddr{{\winlab}WINLAB, Rutgers University, North Brunswick, NJ, USA}
+          \vspace{1mm}
+        \affaddr{{\huawei}Huawei Technologies, Santa Clara, CA,USA}       
+}
+
+\maketitle
+
+\input{intro}
+%\input{requirement}
+% ICN IoT Architecture Requirement 
+%\input{naming}
+%Naming Assignment and name resolution
+\input{devicediscovery}
+\input{pubsub}
+\input{application}
+\input{evaluation}
+%\input{relatedwork}
+%\input{conclusion}
+
+\balance
+\scriptsize
+%\footnotesize
+%\small
+
+%\bibliography{../bibtex/sugang}
+\end{document}
